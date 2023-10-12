@@ -3,7 +3,7 @@
     <v-container>
       <v-row justify="center" class="py-2 d-flex d-md-none">
         <v-col cols="6" md="3">
-          <img src="../assets/img/logo.png" height="80" />
+          <img src="../assets/img/logo.png" height="60" />
         </v-col>
         <v-col cols="6" md="3">
           <h3>Contacto</h3>
@@ -14,7 +14,7 @@
         <v-col cols="12" md="3" class="d-flex justify-center">
           <div>
             <h3 class="pb-2 text-center">Siguenos en nuestras redes</h3>
-            <span class="mx-5" v-for="icon of iconos"
+            <span class="mx-2" v-for="icon of iconos"
               ><Icon class="icon_hover" height="30" :icon="icon"
             /></span>
           </div>
@@ -66,12 +66,7 @@
   </footer>
 </template>
 
-<style scoped lang="scss">
-h3 {
-  font-size: 20px;
-  font-weight: 700;
-}
-</style>
+<style scoped lang="scss"></style>
 <script lang="js" setup>
 import { Icon } from '@iconify/vue'
 import { ref } from 'vue';

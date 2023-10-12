@@ -82,3 +82,103 @@ a {
 .v-container {
   max-width: 1440px !important;
 }
+
+// tamaños de letra del componente header
+
+#inicio {
+  h1 {
+    font-size: 48px;
+  }
+  button {
+    font-size: 14px;
+  }
+}
+// tamaños de letra del componente info
+#info {
+  p {
+    font-size: 20px;
+    width: 50%;
+  }
+  h4 {
+    font-size: 32px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+}
+
+//media query para que los tamaños de letras sean exactos al diseño responsive de la prueba
+
+@media (max-width: 414px) {
+  #inicio {
+    h1 {
+      font-size: 24px;
+    }
+    button {
+      font-size: 14px;
+      width: 100%;
+    }
+  }
+
+  #info {
+    p {
+      font-size: 13px;
+      width: 100%;
+    }
+    h4 {
+      font-size: 20px;
+    }
+    h5 {
+      font-size: 14px;
+    }
+  }
+
+  #nosotros {
+    h2 {
+      font-size: 22px;
+    }
+    h3 {
+      font-size: 14px;
+    }
+    h5 {
+      font-size: 13px;
+    }
+    button {
+      font-size: 14px;
+    }
+    p {
+      font-size: 16px;
+    }
+    button,
+    a {
+      font-size: 12px;
+    }
+  }
+
+  #cursos {
+    h2 {
+      font-size: 22px;
+    }
+    .card_one {
+      h3 {
+        font-size: 14px;
+      }
+      h4 {
+        font-size: 14px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+    .card_two {
+      h3,
+      h4 {
+        font-size: 16px;
+      }
+      p,
+      button {
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -1,13 +1,9 @@
 <template>
-  <section class="Bg-tertiary text-white">
+  <section id="info" class="Bg-tertiary text-white">
     <v-container>
       <v-row>
         <v-col class="d-flex justify-center">
-          <p class="d-none d-md-flex text-center w-50">
-            Estamos impulsados por la firme creencia de que cada uno de nosotros
-            puede marcar la diferencia y contribuir a un mundo más sostenible.
-          </p>
-          <p class="d-flex d-md-none text-center w-100">
+          <p class="d-flex text-center">
             Estamos impulsados por la firme creencia de que cada uno de nosotros
             puede marcar la diferencia y contribuir a un mundo más sostenible.
           </p>
@@ -24,9 +20,9 @@
           >
             <div v-for="{ numero, title } of Info">
               <div class="text-center">
-                <h1 class="text-h4 font-weight-black Secondary">
+                <h4 class="font-weight-black Secondary">
                   {{ numero }}
-                </h1>
+                </h4>
                 <h5 class="font-weight-regular">{{ title }}</h5>
               </div>
             </div>

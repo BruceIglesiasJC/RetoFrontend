@@ -14,7 +14,7 @@
             style="background-color: #1c1c24; border: 1px solid gray"
             :min-height="80"
             :max-width="560"
-            class="rounded-pill my-5 text-white d-flex align-center"
+            class="card_one rounded-pill my-5 text-white d-flex align-center"
             v-for="(items, index) of cursos"
             :key="index"
           >
@@ -38,13 +38,13 @@
             :min-height="400"
             :width="600"
             :min-width="250"
-            class="position_one rounded-xl Bg-secondary my-5 pa-6 Primary"
+            class="card_two position_one rounded-xl Bg-secondary my-5 pa-6 Primary"
           >
             <div>
               <h3 style="font-weight: 800; font-size: 20px">Inversión</h3>
-              <h3 style="font-weight: 700; font-size: 16px">
+              <h4 style="font-weight: 700; font-size: 16px">
                 $190 (Perú: S/420)
-              </h3>
+              </h4>
               <p style="font-weight: 400; font-size: 13px">
                 ¡Pregunta por nuestros descuentos!
               </p>
