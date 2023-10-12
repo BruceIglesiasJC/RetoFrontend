@@ -1,10 +1,84 @@
-/**
- * src/styles/settings.scss
- *
- * Configures SASS variables and Vuetify overwrites
- */
+//variables de los colores
+:root {
+  --var_primary: #1c1c24;
+  --var_secondary: #0193c1;
+  --var_tertiary: #13131a;
+}
 
-// https://vuetifyjs.com/features/sass-variables/`
-// @use 'vuetify/settings' with (
-//   $color-pack: false
-// );
+//extraccion de la fuente localmente
+@font-face {
+  font-family: "Axiforma";
+  src: url("/src/assets/fonts/Axiforma-regular.ttf");
+}
+
+html {
+  font-family: "Axiforma";
+  scroll-behavior: smooth;
+}
+
+//personalizando los colores para diferentes usos
+.Primary {
+  color: var(--var_primary);
+}
+.Secondary {
+  color: var(--var_secondary) !important;
+}
+.Bg-primary {
+  background-color: var(--var_primary);
+}
+.Bg-secondary {
+  background-color: var(--var_secondary);
+}
+.Bg-tertiary {
+  background-color: var(--var_tertiary);
+}
+.icon_hover {
+  cursor: pointer;
+}
+.icon_hover:hover {
+  color: var(--var_secondary);
+}
+
+//valores para los titulos de cada seccion
+
+h2 {
+  position: relative;
+  font-weight: 700;
+  font-size: 32px;
+  z-index: 10;
+}
+
+h2:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  border-radius: 1rem;
+  width: 100%; /* el ancho del título */
+  height: 10px; /* altura del subrayado */
+  background-color: var(--var_secondary);
+}
+
+//distancia entre secciones
+section {
+  padding: 60px 0;
+}
+
+//valores para el nav (header)
+li {
+  font-size: 14px;
+  font-weight: 400;
+}
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  cursor: pointer;
+}
+
+//medida del contenedor padre ( clase extraida del framework / no borrar el !important )
+.v-container {
+  max-width: 1440px !important;
+}
