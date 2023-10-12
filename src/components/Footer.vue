@@ -71,7 +71,7 @@
 import { Icon } from '@iconify/vue'
 import { ref } from 'vue';
 
-
+//los nombres son extraidos por la libreria iconify, revisar la web para traer los nombres de iconos
 const iconos = ref([
   "fe:facebook",
   "mdi:instagram",

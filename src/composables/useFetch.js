@@ -1,5 +1,7 @@
 import { ref, onMounted, computed } from "vue";
 
+//composable para realizar peticiones a una API y extraer sus datos y posibles errores
+
 export function useFetch(url) {
   const data = ref(null);
   const isLoading = ref(true);

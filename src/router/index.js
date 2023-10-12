@@ -3,7 +3,9 @@ import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
   {
+    //ruta
     path: "/",
+    //componente a traer
     component: () => import("@/views/Home.vue"),
   },
 ];

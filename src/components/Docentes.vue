@@ -32,6 +32,9 @@ import { ref } from 'vue';
 import {useFetch} from '../composables/useFetch'
 import DocentesCard from './DocentesCard.vue';
 
+//llamamos el composable para utilizarlo
+//pasando la direccion  de la API en "url" para extraer sus datos
+
 const url = ref("https://61c34f6f9cfb8f0017a3ead1.mockapi.io/api/v1/doctors");
 const { data, error, isLoading} = useFetch(url.value);
 </script>
