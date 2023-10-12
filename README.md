@@ -47,10 +47,12 @@ Al ser una SPA todo se mantiene en este componente, la estructura e importacion 
 Ruta [https://icon-sets.iconify.design/]
 Los iconos son extraidos directamente desde link, seguir la guia que muestra para obtener los iconos
 
+## Datos
+
+El diseño responsive esta diseñado para medidas del iphone XR
+
 ## Informacion personal
 
 Bruce Iglesias Alva
 +51 989104346
 iglesias.abr@gmail.com
-[https://bruceportafolio.joracoding.com/]
-Desarrollador Front end
