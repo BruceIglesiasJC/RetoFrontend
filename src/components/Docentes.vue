@@ -29,5 +29,9 @@
 <style scoped lang="scss"></style>
 <script lang="js" setup>
 import { ref } from 'vue';
+import {useFetch} from '../composables/useFetch'
 import DocentesCard from './DocentesCard.vue';
+
+const url = ref("https://61c34f6f9cfb8f0017a3ead1.mockapi.io/api/v1/doctors");
+const { data, error, isLoading} = useFetch(url.value);
 </script>
